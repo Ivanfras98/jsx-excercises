@@ -1,11 +1,13 @@
 import React from "react";
 
-import  ReactDOM  from "react-dom/client";
+import ReactDOM from "react-dom";
 
-const container = document.querySelector("#root")
+const container = document.querySelector("#root");
 
-const root = ReactDOM.createRoot(container)
+const root = ReactDOM.createRoot(container);
 
-const hello = <h1> Hello, World!!!</h1>
+function sum(a, b) {
+  return <h2>{a + b}</h2>;
+}
 
-root.render(hello)
+root.render(sum(2, 5));
